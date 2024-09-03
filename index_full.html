@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточки пользователей</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 250px;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h2 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .card-content p {
+            margin: 5px 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="Ilya.jpg" alt="Фото пользователя">
+            <div class="card-content">
+                <h2>Илья Муромец</h2>
+                <p>Email: ilya@example.com</p>
+                <p>Дата рождения: 15.05.1975</p>
+                <p>Город: Муром</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Dobrynya.jpg" alt="Фото пользователя">
+            <div class="card-content">
+                <h2>Добрыня Никитич</h2>
+                <p>Email: dobrynya@example.com</p>
+                <p>Дата рождения: 22.08.1981</p>
+                <p>Город: Рязань</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Alyosha.jpg" alt="Фото пользователя">
+            <div class="card-content">
+                <h2>Алеша Попович</h2>
+                <p>Email: alyosha@example.com</p>
+                <p>Дата рождения: 10.01.1992</p>
+                <p>Город: Ростов</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
